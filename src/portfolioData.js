@@ -8,11 +8,11 @@ export const personalInfo = {
   typingRoles: [
     "Freelance Developer",
     "Discord Bot Builder",
-    "FiveM Script Dev",
+    "FiveM Script Developer",
     "Python Programmer",
   ],
   email: "chsarthak24@gmail.com",
-  phone: "+91 8700612640",
+  // phone: "+91 8700612640",
   github: "https://github.com/sarthakchaudhary24",
   linkedin: "https://www.linkedin.com/in/sarthakchaudhary24",
   location: "Ghaziabad, Uttar Pradesh, India",
@@ -22,63 +22,83 @@ export const personalInfo = {
 export const projects = [
   {
     id: 1,
+    title: "myParking",
+    description:
+      "Developed a full-stack web application to simplify parking management by allowing users to find, book, and manage parking spaces efficiently.",
+    // ✅ ADD PROJECT IMAGE: put your image in src/assets/ and import path here
+    // Example: image: require("./assets/spades.png")
+    // Leave as null to show the default colored banner
+    image: require("./myparking.png"),
+    color: "#4F46E5",
+    tech: ["React.js", "Node.js", "Express.js"],
+    // ✅ STATUS: true = "Deployed" (green) | false = "In Development" (amber)
+    deployed: false,
+    // ✅ GITHUB BUTTON: set showGithub to false to hide it
+    showGithub: true,
+    github: "https://github.com/SarthakChaudhary24/myParking",
+    // ✅ LIVE DEMO BUTTON: set showLive to false to hide it
+    showLive: true,
+    live: "https://my-parking-ten.vercel.app/",
+  },
+  {
+    id: 2,
     title: "Spades Manager",
     description:
       "A feature-rich Discord bot built in Python to manage community servers — handles moderation, role management, event coordination, and automated workflows for growing communities.",
     // ✅ ADD PROJECT IMAGE: put your image in src/assets/ and import path here
     // Example: image: require("./assets/spades.png")
     // Leave as null to show the default colored banner
-    image: null,
+    image: require("./spadesmanager.jpg"),
     color: "#4F46E5",
-    tech: ["Python", "Discord.py", "GitHub"],
+    tech: ["Python", "Discord.py"],
     // ✅ STATUS: true = "Deployed" (green) | false = "In Development" (amber)
     deployed: true,
     // ✅ GITHUB BUTTON: set showGithub to false to hide it
-    showGithub: true,
+    showGithub: false,
     github: "https://github.com/sarthakchaudhary24",
     // ✅ LIVE DEMO BUTTON: set showLive to false to hide it
     showLive: false,
     live: "",
   },
   {
-    id: 2,
+    id: 3,
     title: "Password Generator",
     description:
       "A secure Python-based password generator with customizable length, character sets, and complexity rules. Built with clean OOP principles, file I/O, and a simple interactive interface.",
-    image: null,
+    image: require("./password.png"),
     color: "#8B5CF6",
     tech: ["Python", "OOP", "File I/O"],
     deployed: true,
     showGithub: true,
-    github: "https://github.com/sarthakchaudhary24",
-    showLive: false,
-    live: "",
-  },
-  {
-    id: 3,
-    title: "To-Do List App",
-    description:
-      "A Python command-line To-Do List application with persistent file handling, task prioritization, and deadline tracking. Demonstrates clean modular coding and exception handling.",
-    image: null,
-    color: "#06B6D4",
-    tech: ["Python", "File Handling", "OOP"],
-    deployed: true,
-    showGithub: true,
-    github: "https://github.com/sarthakchaudhary24",
+    github: "https://github.com/SarthakChaudhary24/CODSOFT/tree/main/Task3_PasswordGenerator",
     showLive: false,
     live: "",
   },
   {
     id: 4,
+    title: "To-Do List App",
+    description:
+      "A Python command-line To-Do List application with persistent file handling, task prioritization, and deadline tracking. Demonstrates clean modular coding and exception handling.",
+    image: require("./todolist.png"),
+    color: "#06B6D4",
+    tech: ["Python", "File Handling", "OOP"],
+    deployed: true,
+    showGithub: true,
+    github: "https://github.com/SarthakChaudhary24/CODSOFT/tree/main/Task1_ToDoList",
+    showLive: false,
+    live: "",
+  },
+  {
+    id: 5,
     title: "Simple Calculator",
     description:
       "An interactive Python calculator supporting arithmetic operations, history tracking, and error handling. Built as part of the Codsoft internship with focus on clean, maintainable code.",
-    image: null,
+    image: require("./calculator.png"),
     color: "#10B981",
     tech: ["Python", "OOP", "Exception Handling"],
     deployed: true,
     showGithub: true,
-    github: "https://github.com/sarthakchaudhary24",
+    github: "https://github.com/https://github.com/SarthakChaudhary24/CODSOFT/tree/main/Task2_Calculator",
     showLive: false,
     live: "",
   },
@@ -89,7 +109,7 @@ export const experience = [
     id: 1,
     role: "Recruiter",
     company: "Helfen Consultants, India",
-    period: "August 2024 – Present",
+    period: "August 2024 – August 2025",
     type: "work",
     points: [
       "Managing end-to-end Corporate and Technical Recruitment for diverse roles across departments",
@@ -159,20 +179,27 @@ export const education = [
 export const certifications = [
   {
     id: 1,
+    title: "Getting Started with Artificial Intelligence",
+    issuer: "IBM",
+    date: "June 2026",
+    credentialId: "aa2719f7-ee95-4ebb-ae2d-836d0d13486e",
+  },
+  {
+    id: 2,
     title: "Human Resources Expert Certificate: HR Metrics and Analytics",
     issuer: "Udemy",
     date: "January 2026",
     credentialId: "UC-c1185271-38e5-4848-a6fb-f0c741d2f3fc",
   },
   {
-    id: 2,
+    id: 3,
     title: "The Complete Leadership Toolkit: From Conflict to Vision",
     issuer: "Udemy",
     date: "January 2026",
     credentialId: "UC-ec433a51-fb04-4421-8b63-3aa104f55e8e",
   },
   {
-    id: 3,
+    id: 4,
     title: "100 Days of Code: The Complete Python Pro Bootcamp",
     issuer: "Udemy",
     date: "January 2026",
@@ -244,29 +271,29 @@ export const skills = {
     },
     {
       name: "ChatGPT",
-      icon: "emoji:🤖",
+      icon: "https://img.icons8.com/?size=100&id=FBO05Dys9QCg&format=png&color=000000",
       deployed: true,
     },
   ],
   Domains: [
     {
       name: "Artificial Intelligence",
-      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg",
+      icon: "https://img.icons8.com/ios/50/bard.png",
       deployed: false,
     },
     {
       name: "Cybersecurity",
-      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg",
+      icon: "https://img.icons8.com/ios/50/cyber-security.png",
       deployed: false,
     },
     {
       name: "Data Structures",
-      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg",
+      icon: "https://img.icons8.com/external-outline-andi-nur-abdillah/64/external-Data-Structure-artificial-intelligence-(outline)-outline-andi-nur-abdillah.png",
       deployed: true,
     },
     {
       name: "HR Analytics",
-      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jira/jira-original.svg",
+      icon: "https://img.icons8.com/ios/50/human-resources.png",
       deployed: true,
     },
   ],
@@ -282,16 +309,16 @@ export const skills = {
       deployed: true,
     },
     {
-      name: "Ops Management",
-      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/trello/trello-plain.svg",
+      name: "Operations Management",
+      icon: "https://img.icons8.com/ios/50/commercial-development-management--v1.png",
       deployed: true,
     },
   ],
 };
 
 export const stats = [
-  { label: "Projects Built", value: 8, suffix: "+" },
+  { label: "Projects Built", value: 5, suffix: "+" },
   { label: "Certifications", value: 3, suffix: "" },
   { label: "Experience", value: 2, suffix: "yr" },
-  { label: "Skills", value: 16, suffix: "+" },
+  { label: "Skills", value: 15, suffix: "+" },
 ];
