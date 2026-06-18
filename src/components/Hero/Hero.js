@@ -4,6 +4,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import { personalInfo, stats } from "../../portfolioData";
 import "./Hero.css";
+import profilePhoto from "../../PHOTO.jpg";
 
 // Animated counter for stats
 const Counter = ({ value, suffix }) => {
@@ -148,15 +149,12 @@ const Hero = () => {
         <div className="hero-image-wrap">
           <div className="profile-ring">
             <div className="profile-img-container">
-              {/* Profile avatar placeholder with initials */}
-              <div className="profile-avatar">
-                <span>SC</span>
-              </div>
+              <img src={profilePhoto} alt="Sarthak Chaudhary" className="profile-photo" />
             </div>
           </div>
           {/* Floating skill badges */}
           <div className="floating-badge badge-react">⚛ React</div>
-          <div className="floating-badge badge-node">🟢 Node.js</div>
+          <div className="floating-badge badge-node">🐍 Python</div>
           <div className="floating-badge badge-ai">🤖 AI</div>
         </div>
       </div>
@@ -171,10 +169,7 @@ const Hero = () => {
         ))}
       </div>
 
-      {/* Scroll indicator */}
-      <div className="scroll-indicator" onClick={() => scrollTo("projects")}>
-        <div className="scroll-dot" />
-      </div>
+      {/* Scroll indicator removed */}
     </section>
   );
 };

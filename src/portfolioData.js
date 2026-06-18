@@ -4,81 +4,124 @@
 
 export const personalInfo = {
   name: "Sarthak Chaudhary",
-  subtitle: "Computer Science Student | Full Stack Developer | Problem Solver",
+  subtitle: "Freelancer | Developer | Recruiter | Operations Manager",
   typingRoles: [
-    "Web Developer",
-    "AI Enthusiast",
-    "IoT Builder",
-    "Full Stack Developer",
+    "Freelance Developer",
+    "Discord Bot Builder",
+    "FiveM Script Dev",
+    "Python Programmer",
   ],
-  email: "sarthak.chaudhary@email.com",
-  github: "https://github.com/sarthakchaudhary",
-  linkedin: "https://linkedin.com/in/sarthakchaudhary",
-  location: "India",
-  bio: "Passionate Computer Science student building impactful web applications, exploring AI, and crafting IoT solutions.",
+  email: "chsarthak24@gmail.com",
+  phone: "+91 8700612640",
+  github: "https://github.com/sarthakchaudhary24",
+  linkedin: "https://www.linkedin.com/in/sarthakchaudhary24",
+  location: "Ghaziabad, Uttar Pradesh, India",
+  bio: "Passionate developer focused on delivering high-quality, reliable, and custom solutions for communities and creators. Specializing in Discord bots, FiveM Scripts, and digital tools that simplify complex systems.",
 };
 
 export const projects = [
   {
     id: 1,
-    title: "EV Route Planner",
+    title: "Spades Manager",
     description:
-      "An intelligent route-planning web app for electric vehicles. Finds optimal paths considering charging stations, battery range, and real-time traffic to reduce range anxiety.",
+      "A feature-rich Discord bot built in Python to manage community servers — handles moderation, role management, event coordination, and automated workflows for growing communities.",
+    // ✅ ADD PROJECT IMAGE: put your image in src/assets/ and import path here
+    // Example: image: require("./assets/spades.png")
+    // Leave as null to show the default colored banner
     image: null,
     color: "#4F46E5",
-    tech: ["React", "Node.js", "MongoDB", "Google Maps API", "Express.js"],
-    github: "https://github.com/sarthakchaudhary/ev-route-planner",
-    live: "https://ev-route-planner.vercel.app",
+    tech: ["Python", "Discord.py", "GitHub"],
+    // ✅ STATUS: true = "Deployed" (green) | false = "In Development" (amber)
+    deployed: true,
+    // ✅ GITHUB BUTTON: set showGithub to false to hide it
+    showGithub: true,
+    github: "https://github.com/sarthakchaudhary24",
+    // ✅ LIVE DEMO BUTTON: set showLive to false to hide it
+    showLive: false,
+    live: "",
   },
   {
     id: 2,
-    title: "MyParking",
+    title: "Password Generator",
     description:
-      "A smart parking management system that allows users to find, reserve, and pay for parking spots in real time. Includes admin dashboard and QR-based entry.",
+      "A secure Python-based password generator with customizable length, character sets, and complexity rules. Built with clean OOP principles, file I/O, and a simple interactive interface.",
     image: null,
     color: "#8B5CF6",
-    tech: ["React", "Express.js", "MySQL", "JWT", "REST API"],
-    github: "https://github.com/sarthakchaudhary/myparking",
-    live: "https://myparking.vercel.app",
+    tech: ["Python", "OOP", "File I/O"],
+    deployed: true,
+    showGithub: true,
+    github: "https://github.com/sarthakchaudhary24",
+    showLive: false,
+    live: "",
   },
   {
     id: 3,
-    title: "StreamTips",
+    title: "To-Do List App",
     description:
-      "A real-time live streaming tip aggregator that collects, categorizes, and displays tips from viewers. Built with WebSocket connections for instant updates.",
+      "A Python command-line To-Do List application with persistent file handling, task prioritization, and deadline tracking. Demonstrates clean modular coding and exception handling.",
     image: null,
     color: "#06B6D4",
-    tech: ["React", "Socket.io", "Node.js", "MongoDB", "Redis"],
-    github: "https://github.com/sarthakchaudhary/streamtips",
-    live: "https://streamtips.vercel.app",
+    tech: ["Python", "File Handling", "OOP"],
+    deployed: true,
+    showGithub: true,
+    github: "https://github.com/sarthakchaudhary24",
+    showLive: false,
+    live: "",
+  },
+  {
+    id: 4,
+    title: "Simple Calculator",
+    description:
+      "An interactive Python calculator supporting arithmetic operations, history tracking, and error handling. Built as part of the Codsoft internship with focus on clean, maintainable code.",
+    image: null,
+    color: "#10B981",
+    tech: ["Python", "OOP", "Exception Handling"],
+    deployed: true,
+    showGithub: true,
+    github: "https://github.com/sarthakchaudhary24",
+    showLive: false,
+    live: "",
   },
 ];
 
 export const experience = [
   {
     id: 1,
-    role: "Intern",
-    company: "Codsoft · Internship",
-    period: "July 2025 – August 2025",
-    type: "development",
+    role: "Recruiter",
+    company: "Helfen Consultants, India",
+    period: "August 2024 – Present",
+    type: "work",
     points: [
-      "Built responsive web applications with React and Node.js",
-      "Developed and consumed REST APIs for multiple client projects",
-      "Integrated relational and NoSQL databases (MySQL, MongoDB)",
-      "Created real-time systems using WebSockets and Socket.io",
+      "Managing end-to-end Corporate and Technical Recruitment for diverse roles across departments",
+      "Sourcing and screening candidates using LinkedIn, job portals, and professional networks",
+      "Coordinating with hiring managers to understand requirements and ensure quality, timely hiring",
+      "Handling interview scheduling, candidate communication, and offer processes",
     ],
   },
   {
     id: 2,
-    role: "Software Development Enthusiast",
-    company: "Self-directed Learning",
-    period: "2021 – Present",
-    type: "learning",
+    role: "Python Programming Intern",
+    company: "Codsoft, India",
+    period: "July 2025 – August 2025",
+    type: "internship",
     points: [
-      "Exploring AI and machine learning applications in web dev",
-      "Learning cloud deployment with AWS and Vercel",
-      "Building scalable and maintainable system architectures",
-      "Contributing to open-source projects on GitHub",
+      "Developed and deployed Python projects — Calculator App, Password Generator, and To-Do List",
+      "Practiced OOP, file I/O, exception handling, and modular coding for clean maintainable code",
+      "Utilized Git and GitHub for version control and collaborative project documentation",
+      "Completed all hands-on tasks and delivered projects within deadlines",
+    ],
+  },
+  {
+    id: 3,
+    role: "Freelance Operations Manager",
+    company: "APL eSports, India",
+    period: "July 2024 – October 2024",
+    type: "freelance",
+    points: [
+      "Managed and coordinated multiple online gaming events and tournaments",
+      "Oversaw the planning and launch of APL Nation, a custom FiveM Roleplay server",
+      "Handled day-to-day operations, team coordination, and community management",
+      "Collaborated with developers, designers, and marketing partners to meet project deadlines",
     ],
   },
 ];
@@ -86,64 +129,169 @@ export const experience = [
 export const education = [
   {
     id: 1,
-    degree: "Bachelor of Technology in Information Technology (B.Tech)",
-    institution: "IMS Engineering College · Dr. Abdul Kalam Technical University",
+    degree: "Bachelor of Technology in Information Technology",
+    institution: "IMS Engineering College, Dr. APJ Abdul Kalam Technical University",
     period: "2023 – 2027",
     subjects: [
-      "Programming Fundamentals",
+      "Python Programming",
       "Data Structures & Algorithms",
       "Database Management Systems",
+      "Cybersecurity Fundamentals",
+      "Artificial Intelligence",
       "Software Engineering",
-      "Computer Networks",
-      "Web Technologies",
     ],
   },
   {
     id: 2,
-    degree: "Intermediate",
-    institution: "Gurukul The School · CBSE",
-    period: "2022 – 2023",
+    degree: "Intermediate (Class XII)",
+    institution: "Gurukul The School, CBSE",
+    period: "2023",
     subjects: [
-      "Programming Fundamentals",
-      "Data Structures & Algorithms",
-      "Database Management Systems",
-      "Software Engineering",
-      "Computer Networks",
-      "Web Technologies",
+      "Mathematics",
+      "Physics",
+      "Chemistry",
+      "Computer Science",
+      "English",
     ],
   },
 ];
 
+export const certifications = [
+  {
+    id: 1,
+    title: "Human Resources Expert Certificate: HR Metrics and Analytics",
+    issuer: "Udemy",
+    date: "January 2026",
+    credentialId: "UC-c1185271-38e5-4848-a6fb-f0c741d2f3fc",
+  },
+  {
+    id: 2,
+    title: "The Complete Leadership Toolkit: From Conflict to Vision",
+    issuer: "Udemy",
+    date: "January 2026",
+    credentialId: "UC-ec433a51-fb04-4421-8b63-3aa104f55e8e",
+  },
+  {
+    id: 3,
+    title: "100 Days of Code: The Complete Python Pro Bootcamp",
+    issuer: "Udemy",
+    date: "January 2026",
+    credentialId: "UC-d173d50c-0bb7-46f6-9057-6c727701019b",
+  },
+];
+
+// ----------------------------------------------------------------
+// ICON REFERENCE — reuse these exact URLs everywhere so logos
+// are always consistent (Hero typing badges, Skills, Experience etc.)
+// ----------------------------------------------------------------
+// Python   → python-original.svg
+// Java     → java-original.svg
+// C        → c-original.svg
+// Lua      → lua-original.svg
+// Git      → git-original.svg
+// GitHub   → github-original.svg
+// VS Code  → vscode-original.svg
+// ChatGPT  → use emoji "🤖" (no official devicon)
+// AI / TF  → tensorflow-original.svg  ← SAME logo for "AI Enthusiast" badge
+// Linux/CS → linux-original.svg
+// DS/Algo  → python-original.svg (Python is its primary vehicle)
+// LinkedIn → linkedin-original.svg   ← used for Recruiting
+// Trello   → trello-plain.svg        ← used for Ops Management
+// ----------------------------------------------------------------
+
+// ✅ SKILL STATUS OPTIONS:
+// deployed: true  → shows green "Deployed" badge
+// deployed: false → shows orange "In Development" badge
+
 export const skills = {
-  Frontend: [
-    { name: "HTML5", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg", level: 90 },
-    { name: "CSS3", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg", level: 85 },
-    { name: "JavaScript", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg", level: 85 },
-    { name: "React", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg", level: 80 },
-  ],
-  Backend: [
-    { name: "Node.js", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg", level: 78 },
-    { name: "Express.js", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg", level: 75 },
-  ],
-  Database: [
-    { name: "MongoDB", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg", level: 75 },
-    { name: "MySQL", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg", level: 70 },
+  Languages: [
+    {
+      name: "Python",
+      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg",
+      deployed: true,
+    },
+    {
+      name: "Java",
+      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg",
+      deployed: false,
+    },
+    {
+      name: "C",
+      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg",
+      deployed: false,
+    },
+    {
+      name: "Lua",
+      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/lua/lua-original.svg",
+      deployed: true,
+    },
   ],
   Tools: [
-    { name: "Git", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg", level: 82 },
-    { name: "GitHub", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg", level: 85 },
-    { name: "VS Code", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg", level: 90 },
-    { name: "Postman", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postman/postman-original.svg", level: 78 },
+    {
+      name: "Git",
+      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg",
+      deployed: true,
+    },
+    {
+      name: "GitHub",
+      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg",
+      deployed: true,
+    },
+    {
+      name: "VS Code",
+      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg",
+      deployed: true,
+    },
+    {
+      name: "ChatGPT",
+      icon: "emoji:🤖",
+      deployed: true,
+    },
   ],
-  Languages: [
-    { name: "Python", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg", level: 72 },
-    { name: "Java", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg", level: 68 },
+  Domains: [
+    {
+      name: "Artificial Intelligence",
+      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg",
+      deployed: false,
+    },
+    {
+      name: "Cybersecurity",
+      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg",
+      deployed: false,
+    },
+    {
+      name: "Data Structures",
+      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg",
+      deployed: true,
+    },
+    {
+      name: "HR Analytics",
+      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jira/jira-original.svg",
+      deployed: true,
+    },
+  ],
+  Soft: [
+    {
+      name: "Leadership",
+      icon: "emoji:🏆",
+      deployed: true,
+    },
+    {
+      name: "Recruiting",
+      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg",
+      deployed: true,
+    },
+    {
+      name: "Ops Management",
+      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/trello/trello-plain.svg",
+      deployed: true,
+    },
   ],
 };
 
 export const stats = [
-  { label: "Projects Built", value: 10, suffix: "+" },
-  { label: "Technologies", value: 15, suffix: "+" },
-  { label: "GitHub Commits", value: 300, suffix: "+" },
-  { label: "Problems Solved", value: 100, suffix: "+" },
+  { label: "Projects Built", value: 8, suffix: "+" },
+  { label: "Certifications", value: 3, suffix: "" },
+  { label: "Experience", value: 2, suffix: "yr" },
+  { label: "Skills", value: 16, suffix: "+" },
 ];

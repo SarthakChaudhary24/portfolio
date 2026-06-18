@@ -1,43 +1,41 @@
 // ============================================================
-// Skills.js — Categorized skills with logos, progress bars, hover effects
+// Skills.js — Categorized skills with logos and deployed/in-dev badges
 // ============================================================
 import React, { useEffect, useRef, useState } from "react";
 import { skills } from "../../portfolioData";
 import "./Skills.css";
 
-// Animated progress bar for each skill
-const SkillBar = ({ skill, visible }) => {
+const SkillItem = ({ skill }) => {
+  const isEmoji = skill.icon?.startsWith("emoji:");
+  const emoji = isEmoji ? skill.icon.replace("emoji:", "") : null;
+
   return (
     <div className="skill-item">
-      {/* Logo + name */}
-      <div className="skill-header">
-        <div className="skill-logo-wrap">
-          <img
-            src={skill.icon}
-            alt={skill.name}
-            className="skill-logo"
-            loading="lazy"
-            onError={(e) => {
-              // Fallback to text initials if icon fails to load
-              e.target.style.display = "none";
-              e.target.nextSibling.style.display = "flex";
-            }}
-          />
-          <span className="skill-logo-fallback" style={{ display: "none" }}>
-            {skill.name.slice(0, 2)}
-          </span>
-        </div>
-        <span className="skill-name">{skill.name}</span>
-        <span className="skill-percent">{skill.level}%</span>
+      {/* Logo */}
+      <div className="skill-logo-wrap">
+        {isEmoji ? (
+          <span className="skill-emoji">{emoji}</span>
+        ) : (
+          <>
+            <img
+              src={skill.icon}
+              alt={skill.name}
+              className="skill-logo"
+              loading="lazy"
+              onError={(e) => {
+                e.target.style.display = "none";
+                e.target.nextSibling.style.display = "flex";
+              }}
+            />
+            <span className="skill-logo-fallback" style={{ display: "none" }}>
+              {skill.name.slice(0, 2)}
+            </span>
+          </>
+        )}
       </div>
 
-      {/* Progress bar */}
-      <div className="skill-bar-track">
-        <div
-          className="skill-bar-fill"
-          style={{ width: visible ? `${skill.level}%` : "0%" }}
-        />
-      </div>
+      {/* Name */}
+      <span className="skill-name">{skill.name}</span>
     </div>
   );
 };
@@ -69,7 +67,7 @@ const SkillCategory = ({ category, skillList }) => {
       </h3>
       <div className="skill-list">
         {skillList.map((skill) => (
-          <SkillBar key={skill.name} skill={skill} visible={visible} />
+          <SkillItem key={skill.name} skill={skill} />
         ))}
       </div>
     </div>
@@ -84,11 +82,10 @@ const Skills = () => {
           <span className="section-tag">Expertise</span>
           <h2 className="section-title">Skills & Technologies</h2>
           <p className="section-desc">
-            A curated toolkit — from frontend finesse to backend muscle and beyond.
+            A curated toolkit — from programming languages to tools and domains.
           </p>
         </div>
 
-        {/* Skills grid by category */}
         <div className="skills-grid">
           {Object.entries(skills).map(([category, skillList]) => (
             <SkillCategory key={category} category={category} skillList={skillList} />

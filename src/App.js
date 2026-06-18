@@ -20,6 +20,7 @@ import Hero from "./components/Hero/Hero";
 import Projects from "./components/Projects/Projects";
 import Experience from "./components/Experience/Experience";
 import Education from "./components/Education/Education";
+import Certifications from "./components/Certifications/Certifications";
 import Skills from "./components/Skills/Skills";
 import Contact from "./components/Contact/Contact";
 
@@ -49,6 +50,7 @@ const App = () => {
             <Projects />
             <Experience />
             <Education />
+            <Certifications />
             <Skills />
             <Contact />
           </main>

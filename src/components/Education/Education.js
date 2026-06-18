@@ -1,12 +1,12 @@
 // ============================================================
-// Education.js — Animated education card layout
+// Education.js — Horizontal card layout (matching certifications style)
 // ============================================================
 import React, { useEffect, useRef } from "react";
 import { education } from "../../portfolioData";
 import "./Education.css";
 
-const EducationCard = ({ item }) => {
-  const cardRef = useRef(null);
+const EducationCard = ({ item, index }) => {
+  const ref = useRef(null);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -18,46 +18,39 @@ const EducationCard = ({ item }) => {
       },
       { threshold: 0.2 }
     );
-    if (cardRef.current) observer.observe(cardRef.current);
+    if (ref.current) observer.observe(ref.current);
     return () => observer.disconnect();
   }, []);
 
   return (
-    <div className="edu-card" ref={cardRef}>
-      {/* Decorative left accent bar */}
-      <div className="edu-accent" />
-
-      <div className="edu-content">
-        {/* Icon */}
-        <div className="edu-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
-            <path d="M22 10v6M2 10l10-5 10 5-10 5z" />
-            <path d="M6 12v5c3 3 9 3 12 0v-5" />
-          </svg>
-        </div>
-
-        <div className="edu-info">
-          <span className="edu-period">{item.period}</span>
-          <h3 className="edu-degree">{item.degree}</h3>
-          <p className="edu-institution">{item.institution}</p>
-        </div>
+    <div className="edu-card" ref={ref} style={{ "--delay": `${index * 0.15}s` }}>
+      {/* Left icon */}
+      <div className="edu-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
+          <path d="M22 10v6M2 10l10-5 10 5-10 5z" />
+          <path d="M6 12v5c3 3 9 3 12 0v-5" />
+        </svg>
       </div>
 
-      {/* Subjects grid */}
-      <div className="edu-subjects-wrap">
-        <p className="edu-subjects-label">Core Subjects</p>
+      {/* Main info */}
+      <div className="edu-body">
+        <span className="edu-period">{item.period}</span>
+        <h3 className="edu-degree">{item.degree}</h3>
+        <p className="edu-institution">{item.institution}</p>
+
+        {/* Subjects as inline chips */}
         <div className="edu-subjects">
           {item.subjects.map((subject) => (
-            <div key={subject} className="edu-subject-chip">
+            <span key={subject} className="edu-chip">
               <span className="chip-check">✓</span>
               {subject}
-            </div>
+            </span>
           ))}
         </div>
       </div>
 
-      {/* Decorative glow */}
-      <div className="edu-glow" />
+      {/* Right badge */}
+      <div className="edu-badge">🎓</div>
     </div>
   );
 };
@@ -70,13 +63,13 @@ const Education = () => {
           <span className="section-tag">Academic</span>
           <h2 className="section-title">Education</h2>
           <p className="section-desc">
-            Building a strong CS foundation to power impactful software solutions.
+            Building a strong foundation to power impactful solutions.
           </p>
         </div>
 
-        <div className="edu-grid">
-          {education.map((item) => (
-            <EducationCard key={item.id} item={item} />
+        <div className="edu-list">
+          {education.map((item, i) => (
+            <EducationCard key={item.id} item={item} index={i} />
           ))}
         </div>
       </div>
