@@ -1,0 +1,175 @@
+/* ============================================================
+   Experience.css — Vertical animated timeline styles
+   ============================================================ */
+
+.experience-section {
+  background: linear-gradient(180deg, #fafafa 0%, #f5f3ff 50%, #fafafa 100%);
+}
+
+/* Timeline container */
+.timeline {
+  position: relative;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+
+/* Vertical center line */
+.timeline-line {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: linear-gradient(180deg, transparent, #4f46e5 20%, #8b5cf6 80%, transparent);
+  transform: translateX(-50%);
+}
+
+/* Each item */
+.timeline-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+  margin-bottom: 3rem;
+  position: relative;
+  opacity: 0;
+  transition: opacity 0.7s ease var(--delay, 0s),
+              transform 0.7s ease var(--delay, 0s);
+}
+
+.timeline-item.left {
+  flex-direction: row-reverse;
+  transform: translateX(-60px);
+}
+
+.timeline-item.right {
+  transform: translateX(60px);
+}
+
+.timeline-item.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Dot in the center */
+.timeline-dot {
+  position: absolute;
+  left: 50%;
+  top: 24px;
+  transform: translate(-50%, -50%);
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #4f46e5, #8b5cf6);
+  box-shadow: 0 0 0 4px rgba(79, 70, 229, 0.15);
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dot-inner {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #fff;
+}
+
+/* The card itself */
+.timeline-card {
+  width: calc(50% - 3rem);
+  background: #fff;
+  border-radius: 18px;
+  padding: 1.5rem;
+  border: 1px solid #f1f0ff;
+  box-shadow: 0 4px 24px rgba(79, 70, 229, 0.08);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.timeline-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 40px rgba(79, 70, 229, 0.14);
+}
+
+.timeline-period {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #8b5cf6;
+  background: rgba(139, 92, 246, 0.1);
+  padding: 0.25rem 0.75rem;
+  border-radius: 6px;
+  margin-bottom: 0.75rem;
+  letter-spacing: 0.04em;
+}
+
+.timeline-role {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #111827;
+  margin: 0 0 0.25rem;
+}
+
+.timeline-company {
+  font-size: 0.88rem;
+  color: #6b7280;
+  margin: 0 0 1rem;
+  font-weight: 500;
+}
+
+.timeline-points {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.timeline-point {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.6rem;
+  font-size: 0.87rem;
+  color: #374151;
+  line-height: 1.5;
+}
+
+.point-dot {
+  flex-shrink: 0;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #4f46e5, #8b5cf6);
+  margin-top: 0.4rem;
+}
+
+/* Responsive — single column */
+@media (max-width: 768px) {
+  .timeline-line {
+    left: 20px;
+  }
+
+  .timeline-item,
+  .timeline-item.left,
+  .timeline-item.right {
+    flex-direction: column;
+    padding-left: 50px;
+    transform: translateX(0);
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  .timeline-item.visible {
+    transform: translateY(0);
+  }
+
+  .timeline-dot {
+    left: 20px;
+    top: 28px;
+  }
+
+  .timeline-card {
+    width: 100%;
+  }
+}

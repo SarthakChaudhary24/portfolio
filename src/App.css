@@ -1,0 +1,19 @@
+/* ============================================================
+   App.css — App-level wrapper styles
+   ============================================================ */
+
+.app {
+  min-height: 100vh;
+  background: #fafafa;
+  position: relative;
+}
+
+/* Page transition fade-in after loader */
+.app-content {
+  animation: appFadeIn 0.5s ease both;
+}
+
+@keyframes appFadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}

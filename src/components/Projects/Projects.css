@@ -1,0 +1,177 @@
+/* ============================================================
+   Projects.css — Project cards with viewport reveal animations
+   ============================================================ */
+
+.projects-section {
+  background: #fafafa;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+  gap: 2rem;
+}
+
+/* Card base */
+.project-card {
+  background: #fff;
+  border-radius: 20px;
+  overflow: hidden;
+  border: 1px solid #f1f0ff;
+  box-shadow: 0 2px 20px rgba(79, 70, 229, 0.06);
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.6s ease var(--delay, 0s),
+              transform 0.6s ease var(--delay, 0s),
+              box-shadow 0.35s ease;
+}
+
+.project-card.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.project-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 16px 48px rgba(79, 70, 229, 0.15);
+}
+
+/* Banner */
+.card-banner {
+  height: 160px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.card-icon {
+  width: 64px;
+  height: 64px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.card-icon svg {
+  width: 32px;
+  height: 32px;
+}
+
+/* Decorative dot grid on banner */
+.banner-dots {
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(circle, rgba(0,0,0,0.08) 1px, transparent 1px);
+  background-size: 20px 20px;
+}
+
+/* Card body */
+.card-body {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.card-title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #111827;
+  margin: 0;
+}
+
+.card-desc {
+  font-size: 0.88rem;
+  color: #6b7280;
+  line-height: 1.65;
+  margin: 0;
+}
+
+/* Tech badges */
+.card-tech {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.tech-badge {
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: #4f46e5;
+  background: rgba(79, 70, 229, 0.08);
+  border: 1px solid rgba(79, 70, 229, 0.15);
+  padding: 0.25rem 0.65rem;
+  border-radius: 6px;
+  letter-spacing: 0.02em;
+  transition: all 0.2s;
+}
+
+.tech-badge:hover {
+  background: rgba(79, 70, 229, 0.15);
+  transform: translateY(-1px);
+}
+
+/* Action buttons */
+.card-actions {
+  display: flex;
+  gap: 0.75rem;
+  margin-top: 0.5rem;
+}
+
+.card-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.6rem 1.1rem;
+  border-radius: 10px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.25s ease;
+}
+
+.card-btn svg {
+  width: 16px;
+  height: 16px;
+}
+
+.btn-github {
+  background: #f9fafb;
+  color: #374151;
+  border: 1px solid #e5e7eb;
+  flex: 1;
+  justify-content: center;
+}
+
+.btn-github:hover {
+  background: #111827;
+  color: #fff;
+  border-color: #111827;
+  transform: translateY(-2px);
+}
+
+.btn-live {
+  color: #fff;
+  flex: 1;
+  justify-content: center;
+  border: none;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.btn-live:hover {
+  filter: brightness(1.1);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+}
+
+@media (max-width: 768px) {
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+}
