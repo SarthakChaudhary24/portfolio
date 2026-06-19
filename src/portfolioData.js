@@ -54,8 +54,8 @@ export const projects = [
     // ✅ STATUS: true = "Deployed" (green) | false = "In Development" (amber)
     deployed: true,
     // ✅ GITHUB BUTTON: set showGithub to false to hide it
-    showGithub: false,
-    github: "https://github.com/sarthakchaudhary24",
+    showGithub: true,
+    github: "https://github.com/SarthakChaudhary24/Spades-Manager",
     // ✅ LIVE DEMO BUTTON: set showLive to false to hide it
     showLive: false,
     live: "",

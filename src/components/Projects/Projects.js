@@ -58,7 +58,7 @@ const ProjectCard = ({ project, index }) => {
           <h3 className="card-title">{project.title}</h3>
           {/* Status badge — change deployed: true/false in portfolioData.js */}
           <span className={`project-status ${project.deployed ? "status-deployed" : "status-dev"}`}>
-            {project.deployed ? "✦ Deployed" : "⚙ In Dev"}
+            {project.deployed ? "✦ Deployed" : "⚙ In Development"}
           </span>
         </div>
         <p className="card-desc">{project.description}</p>
