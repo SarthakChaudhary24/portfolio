@@ -179,34 +179,48 @@ export const education = [
 export const certifications = [
   {
     id: 1,
+    title: "Project Management Fundamentals",
+    issuer: "IBM",
+    date: "June 2026",
+    credentialId: "59efff5a-42a3-4851-92c2-eac743c40a6d",
+  },
+  {
+    id: 2,
+    title: "Lifelong Professional Skills",
+    issuer: "IBM",
+    date: "June 2026",
+    credentialId: "e6f78765-60c1-425c-9c77-ecdfdffb9c6a",
+  },
+  {
+    id: 3,
     title: "Artificial Intelligence Fundamentals",
     issuer: "IBM",
     date: "June 2026",
     credentialId: "ac368a9f-3ac3-4e68-8d0a-6c86439083e3",
   },
   {
-    id: 2,
+    id: 4,
     title: "Getting Started with Artificial Intelligence",
     issuer: "IBM",
     date: "June 2026",
     credentialId: "aa2719f7-ee95-4ebb-ae2d-836d0d13486e",
   },
   {
-    id: 3,
+    id: 5,
     title: "Human Resources Expert Certificate: HR Metrics and Analytics",
     issuer: "Udemy",
     date: "January 2026",
     credentialId: "UC-c1185271-38e5-4848-a6fb-f0c741d2f3fc",
   },
   {
-    id: 4,
+    id: 6,
     title: "The Complete Leadership Toolkit: From Conflict to Vision",
     issuer: "Udemy",
     date: "January 2026",
     credentialId: "UC-ec433a51-fb04-4421-8b63-3aa104f55e8e",
   },
   {
-    id: 5,
+    id: 7,
     title: "100 Days of Code: The Complete Python Pro Bootcamp",
     issuer: "Udemy",
     date: "January 2026",
@@ -277,30 +291,13 @@ export const skills = {
       deployed: true,
     },
     {
-      name: "ChatGPT",
-      icon: "https://img.icons8.com/?size=100&id=FBO05Dys9QCg&format=png&color=000000",
-      deployed: true,
-    },
-  ],
-  Domains: [
-    {
-      name: "Artificial Intelligence",
-      icon: "https://img.icons8.com/ios/50/bard.png",
-      deployed: false,
-    },
-    {
-      name: "Cybersecurity",
-      icon: "https://img.icons8.com/ios/50/cyber-security.png",
-      deployed: false,
-    },
-    {
-      name: "Data Structures",
-      icon: "https://img.icons8.com/external-outline-andi-nur-abdillah/64/external-Data-Structure-artificial-intelligence-(outline)-outline-andi-nur-abdillah.png",
+      name: "Discord API",
+      icon: "https://img.icons8.com/ios-filled/50/discord-logo.png",
       deployed: true,
     },
     {
-      name: "HR Analytics",
-      icon: "https://img.icons8.com/ios/50/human-resources.png",
+      name: "FiveM Framework",
+      icon: "https://img.icons8.com/color/48/fivem.png",
       deployed: true,
     },
   ],
@@ -321,11 +318,58 @@ export const skills = {
       deployed: true,
     },
   ],
+  Development: [
+    {
+      name: "Artificial Intelligence",
+      icon: "https://img.icons8.com/ios/50/bard.png",
+      deployed: false,
+    },
+    {
+      name: "Cybersecurity",
+      icon: "https://img.icons8.com/ios/50/cyber-security.png",
+      deployed: false,
+    },
+    {
+      name: "Data Structures",
+      icon: "https://img.icons8.com/external-outline-andi-nur-abdillah/64/external-Data-Structure-artificial-intelligence-(outline)-outline-andi-nur-abdillah.png",
+      deployed: true,
+    },
+    {
+      name: "Discord Bot Development",
+      icon: "https://img.icons8.com/ios-filled/50/discord-logo.png",
+      deployed: true,
+    },
+    {
+      name: "Web Development",
+      icon: "https://img.icons8.com/ios/50/laptop-coding.png",
+      deployed: true,
+    },
+    {
+      name: "Rest APIs",
+      icon: "https://img.icons8.com/ios/50/api.png",
+      deployed: true,
+    },
+    {
+      name: "Machine Learning",
+      icon: "https://img.icons8.com/ios/50/machine-learning.png",
+      deployed: true,
+    },
+    {
+      name: "Natural Learning Processing",
+      icon: "https://img.icons8.com/external-solidglyph-m-oki-orlando/32/external-NLP-artificial-intelligence-solidglyph-m-oki-orlando.png",
+      deployed: true,
+    },
+    {
+      name: "Project Management",
+      icon: "https://img.icons8.com/external-smashingstocks-mixed-smashing-stocks/68/external-project-management-industrial-production-factory-automation-smart-industries-smashingstocks-mixed-smashing-stocks.png",
+      deployed: true,
+    },
+  ],
 };
 
 export const stats = [
   { label: "Projects Built", value: 5, suffix: "+" },
-  { label: "Certifications", value: 4, suffix: "" },
+  { label: "Certifications", value: 7, suffix: "" },
   { label: "Experience", value: 2, suffix: "yr" },
-  { label: "Skills", value: 15, suffix: "+" },
+  { label: "Skills", value: 21, suffix: "+" },
 ];
