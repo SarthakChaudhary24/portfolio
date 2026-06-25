@@ -119,8 +119,16 @@ const Hero = () => {
                 <path d="M5 12h14M12 5l7 7-7 7" />
               </svg>
             </button>
-            <button className="btn-secondary" onClick={() => scrollTo("contact")}>
-              Contact Me
+            <button
+              className="btn-secondary"
+              onClick={() =>
+                window.open(
+                  "https://drive.google.com/file/d/1uPPDjHbej7Q2FfVX8kZxDq0aW_Xuzrx_/view?usp=sharing",
+                  "_blank"
+                )
+              }
+            >
+              Resume
             </button>
           </div>
 
