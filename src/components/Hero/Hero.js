@@ -123,7 +123,7 @@ const Hero = () => {
               className="btn-secondary"
               onClick={() =>
                 window.open(
-                  "https://drive.google.com/file/d/1uPPDjHbej7Q2FfVX8kZxDq0aW_Xuzrx_/view?usp=sharing",
+                  "https://docs.google.com/document/d/1F3wnM33vJxtcCgTOTBoXWrvm7mFs3wbS/edit?usp=sharing&ouid=115932615251841491256&rtpof=true&sd=true",
                   "_blank"
                 )
               }
