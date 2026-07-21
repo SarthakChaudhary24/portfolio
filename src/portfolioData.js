@@ -22,6 +22,20 @@ export const personalInfo = {
 export const projects = [
   {
     id: 1,
+    title: "Remote PC Optimizer",
+    description:
+      "A ultra-lightweight Windows optimization platform engineered for instant remote system tuning and live hardware monitoring with zero database footprint.",
+    image: require("./Screenshot 2026-07-21 165556.png"),
+    color: "#4F46E5",
+    tech: ["React.js", "Node.js", "Socket.io", "NW.js"],
+    status: "building",
+    showGithub: false,
+    github: "https://github.com/SarthakChaudhary24/Spades-Manager",
+    showLive: false,
+    live: "",
+  },
+  {
+    id: 2,
     title: "myParking",
     description:
       "Developed a full-stack web application to simplify parking management by allowing users to find, book, and manage parking spaces efficiently.",
@@ -31,8 +45,8 @@ export const projects = [
     image: require("./myparking.png"),
     color: "#4F46E5",
     tech: ["React.js", "Node.js", "Express.js"],
-    // ✅ STATUS: true = "Deployed" (green) | false = "In Development" (amber)
-    deployed: false,
+    // ✅ STATUS: deployed = "Deployed" (green) | development = "In Development" (amber) / building = "Under Build" (blue)
+    status: "development",
     // ✅ GITHUB BUTTON: set showGithub to false to hide it
     showGithub: true,
     github: "https://github.com/SarthakChaudhary24/myParking",
@@ -41,62 +55,56 @@ export const projects = [
     live: "https://my-parking-ten.vercel.app/",
   },
   {
-    id: 2,
+    id: 3,
     title: "Spades Manager",
     description:
       "A feature-rich Discord bot built in Python to manage community servers — handles moderation, role management, event coordination, and automated workflows for growing communities.",
-    // ✅ ADD PROJECT IMAGE: put your image in src/assets/ and import path here
-    // Example: image: require("./assets/spades.png")
-    // Leave as null to show the default colored banner
     image: require("./spadesmanager.jpg"),
     color: "#4F46E5",
     tech: ["Python", "Discord.py"],
-    // ✅ STATUS: true = "Deployed" (green) | false = "In Development" (amber)
-    deployed: true,
-    // ✅ GITHUB BUTTON: set showGithub to false to hide it
+    status: "deployed",
     showGithub: true,
     github: "https://github.com/SarthakChaudhary24/Spades-Manager",
-    // ✅ LIVE DEMO BUTTON: set showLive to false to hide it
     showLive: false,
     live: "",
   },
   {
-    id: 3,
+    id: 4,
     title: "Password Generator",
     description:
       "A secure Python-based password generator with customizable length, character sets, and complexity rules. Built with clean OOP principles, file I/O, and a simple interactive interface.",
     image: require("./password.png"),
     color: "#8B5CF6",
     tech: ["Python", "OOP", "File I/O"],
-    deployed: true,
+    status: "deployed",
     showGithub: true,
     github: "https://github.com/SarthakChaudhary24/CODSOFT/tree/main/Task3_PasswordGenerator",
     showLive: false,
     live: "",
   },
   {
-    id: 4,
+    id: 5,
     title: "To-Do List App",
     description:
       "A Python command-line To-Do List application with persistent file handling, task prioritization, and deadline tracking. Demonstrates clean modular coding and exception handling.",
     image: require("./todolist.png"),
     color: "#06B6D4",
     tech: ["Python", "File Handling", "OOP"],
-    deployed: true,
+    status: "deployed",
     showGithub: true,
     github: "https://github.com/SarthakChaudhary24/CODSOFT/tree/main/Task1_ToDoList",
     showLive: false,
     live: "",
   },
   {
-    id: 5,
+    id: 6,
     title: "Simple Calculator",
     description:
       "An interactive Python calculator supporting arithmetic operations, history tracking, and error handling. Built as part of the Codsoft internship with focus on clean, maintainable code.",
     image: require("./calculator.png"),
     color: "#10B981",
     tech: ["Python", "OOP", "Exception Handling"],
-    deployed: true,
+    status: "deployed",
     showGithub: true,
     github: "https://github.com/https://github.com/SarthakChaudhary24/CODSOFT/tree/main/Task2_Calculator",
     showLive: false,

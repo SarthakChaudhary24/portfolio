@@ -56,9 +56,21 @@ const ProjectCard = ({ project, index }) => {
       <div className="card-body">
         <div className="card-title-row">
           <h3 className="card-title">{project.title}</h3>
-          {/* Status badge — change deployed: true/false in portfolioData.js */}
-          <span className={`project-status ${project.deployed ? "status-deployed" : "status-dev"}`}>
-            {project.deployed ? "✦ Deployed" : "⚙ In Development"}
+
+          <span
+            className={`project-status ${
+              project.status === "deployed"
+                ? "status-deployed"
+                : project.status === "building"
+                ? "status-building"
+                : "status-dev"
+            }`}
+          >
+            {project.status === "deployed"
+              ? "✦ Deployed"
+              : project.status === "building"
+              ? "🚧 Under Build"
+              : "⚙ In Development"}
           </span>
         </div>
         <p className="card-desc">{project.description}</p>
