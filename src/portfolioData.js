@@ -21,22 +21,6 @@ export const personalInfo = {
 
 export const projects = [
   {
-    id: 1,
-    title: "H.O.M.E.R",
-    description:
-      "Hardware Optimization & Management Engine for Resources, it is an ultra-lightweight Windows optimization platform engineered for instant remote system tuning.",
-    image: require("./Screenshot 2026-07-21 165556.png"),
-    color: "#3da833",
-    tech: ["React.js", "Node.js", "Socket.io", "NW.js"],
-    status: "building",
-    showGithub: false,
-    github: "https://github.com/SarthakChaudhary24/Spades-Manager",
-    showLive: false,
-    live: "",
-    showWebsite: false,
-    website: "https://github.com/SarthakChaudhary24/Spades-Manager",
-  },
-  {
     id: 2,
     title: "myParking",
     description:
@@ -55,6 +39,8 @@ export const projects = [
     // ✅ LIVE DEMO BUTTON: set showLive to false to hide it
     showLive: true,
     live: "https://my-parking-ten.vercel.app/",
+    showWebsite: false,
+    website: "https://github.com/SarthakChaudhary24/Spades-Manager",
   },
   {
     id: 3,
