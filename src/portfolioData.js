@@ -21,6 +21,28 @@ export const personalInfo = {
 
 export const projects = [
   {
+    id: 1,
+    title: "PlacementOS",
+    description:
+      "Forty CDC mails, six WhatsApp groups and a portal that logs you out. PlacementOS parses every drive announcement into one tracked pipeline — so you never miss an OA, and never retype your roll number again.",
+    // ✅ ADD PROJECT IMAGE: put your image in src/assets/ and import path here
+    // Example: image: require("./assets/spades.png")
+    // Leave as null to show the default colored banner
+    image: require("./placementos.png"),
+    color: "#4F46E5",
+    tech: ["React.js", "Node.js", "Express.js"],
+    // ✅ STATUS: deployed = "Deployed" (green) | development = "In Development" (amber) / building = "Under Build" (blue)
+    status: "building",
+    // ✅ GITHUB BUTTON: set showGithub to false to hide it
+    showGithub: false,
+    github: "https://github.com/SarthakChaudhary24/myParking",
+    // ✅ LIVE DEMO BUTTON: set showLive to false to hide it
+    showLive: false,
+    live: "https://my-parking-ten.vercel.app/",
+    showWebsite: false,
+    website: "https://github.com/SarthakChaudhary24/Spades-Manager",
+  },
+  {
     id: 2,
     title: "myParking",
     description:
