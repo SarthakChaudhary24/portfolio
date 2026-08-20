@@ -22,9 +22,9 @@ export const personalInfo = {
 export const projects = [
   {
     id: 1,
-    title: "Remote PC Optimizer",
+    title: "H.O.M.E.R",
     description:
-      "A ultra-lightweight Windows optimization platform engineered for instant remote system tuning and live hardware monitoring with zero database footprint.",
+      "Hardware Optimization & Management Engine for Resources, it is an ultra-lightweight Windows optimization platform engineered for instant remote system tuning.",
     image: require("./Screenshot 2026-07-21 165556.png"),
     color: "#4F46E5",
     tech: ["React.js", "Node.js", "Socket.io", "NW.js"],
