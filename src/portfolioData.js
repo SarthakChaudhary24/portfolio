@@ -24,7 +24,7 @@ export const projects = [
     id: 1,
     title: "TrackCDC",
     description:
-      "Forty mails from your Career Development Centre, six WhatsApp groups and a portal that logs you out. TrackCDC parses every drive announcement into one tracked pipeline — so you never miss an OA, and never retype your roll number again.",
+      "Forty mails from your Career Development Centre, six WhatsApp groups and a portal that logs you out. TrackCDC parses every drive announcement into one tracked pipeline.",
     // ✅ ADD PROJECT IMAGE: put your image in src/assets/ and import path here
     // Example: image: require("./assets/spades.png")
     // Leave as null to show the default colored banner
