@@ -29,7 +29,7 @@ export const projects = [
     // Example: image: require("./assets/spades.png")
     // Leave as null to show the default colored banner
     image: require("./trackcdc.png"),
-    color: "#4F46E5",
+    color: "#2265f7",
     tech: ["React.js", "Node.js", "Express.js"],
     // ✅ STATUS: deployed = "Deployed" (green) | development = "In Development" (amber) / building = "Under Build" (blue)
     status: "building",
@@ -39,8 +39,8 @@ export const projects = [
     // ✅ LIVE DEMO BUTTON: set showLive to false to hide it
     showLive: false,
     live: "https://my-parking-ten.vercel.app/",
-    showWebsite: false,
-    website: "https://github.com/SarthakChaudhary24/Spades-Manager",
+    showWebsite: true,
+    website: "https://www.trackcdc.me/",
   },
   {
     id: 2,
