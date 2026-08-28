@@ -32,7 +32,7 @@ export const projects = [
     color: "#2265f7",
     tech: ["React.js", "Node.js", "Express.js"],
     // ✅ STATUS: deployed = "Deployed" (green) | development = "In Development" (amber) / building = "Under Build" (blue)
-    status: "building",
+    status: "deployed",
     // ✅ GITHUB BUTTON: set showGithub to false to hide it
     showGithub: false,
     github: "https://github.com/SarthakChaudhary24/myParking",
